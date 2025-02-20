@@ -18,6 +18,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { CartContextProvider } from "./component/Context/CartContext";
 import { WhishesContextProvider } from "./component/Context/WhishesContext";
+import Product from "./component/Products/Products";
 
 let queryClient = new QueryClient();
 const routeritems = createBrowserRouter([
@@ -49,6 +50,15 @@ const routeritems = createBrowserRouter([
           <ProtectedRoute>
             {" "}
             <Cart />{" "}
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: "product",
+        element: (
+          <ProtectedRoute>
+            {" "}
+            <Product />{" "}
           </ProtectedRoute>
         ),
       },

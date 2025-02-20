@@ -15,13 +15,13 @@ export default function SliderGatCategories() {
       .catch((err) => {
         console.log(err);
       });
-  }, []); // يتم استدعاء useEffect مرة واحدة عند تحميل المكون
+  }, []);  
 
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow:8,
+    slidesToShow:3 ,
     slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 3000,

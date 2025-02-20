@@ -25,7 +25,7 @@ export default function Wishes() {
       } catch (error) {
         setError(error.message);
       } finally {
-        setLoading(false); // ✅ إيقاف التحميل بعد جلب البيانات
+        setLoading(false); 
       }
     };
 
@@ -89,8 +89,11 @@ export default function Wishes() {
           </table>
         </div>
       ) : (
-        <p className="text-danger text-center mt-5 fw-bold">No products in wishlist</p>
-      )}
+        <h1 className="text-warning text-center m-5">
+ No products in wishlist
+ 
+       </h1>
+       )}
     </>
   );
 }

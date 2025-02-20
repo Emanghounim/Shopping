@@ -184,7 +184,7 @@ const Cart = () => {
           </div>
         </>
       ) : (
-        <h1 className="text-danger text-center mt-5 fw-bold">
+        <h1 className="text-warning text-center m-5">
           No Products In Cart
         </h1>
       )}
