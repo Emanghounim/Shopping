@@ -1,0 +1,31 @@
+/* تصميم الكارد */
+.product-card {
+    min-height: 300px; /* ارتفاع ثابت للبطاقة */
+     width: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* توزيع المحتوى بشكل متساوٍ */
+    align-items: center; /* توسيط العناصر أفقيًا */
+    border-radius: 10px;
+    text-align: center;
+    transition: box-shadow 0.53s ease, transform 0.2s ease;
+  }
+  
+  /* تأثير hover */
+  .product-card:hover {
+    box-shadow: 0 4px 8px rgba(98, 116, 194, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* الصورة داخل الكارد */
+  .product-image {
+    max-height: 150px; /* الحد الأقصى لارتفاع الصورة */
+ 
+    margin-bottom: 15px;
+  }
+  
+  /* توحيد النص */
+  h2, h3 {
+    margin: 10px 0;
+  }
+  
